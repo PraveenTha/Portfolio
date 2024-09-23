@@ -1,0 +1,247 @@
+ul {
+  list-style: none;
+}
+.nav {
+  position: fixed;
+  z-index: 99;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 2rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Sofadi One', system-ui;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+.nav-overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -2;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 4rem;
+  transition: all 2s cubic-bezier(1.16, 1, 0.3, 1);
+}
+
+.hamBox {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  padding: 2em;
+  margin: 0 10px;
+}
+
+.hamBox:hover {
+  background: #2a2a2f;
+}
+
+.hamBoxOpen {
+  background: #2a2a2f;
+}
+
+.lineTop,
+.lineBottom {
+  margin: 0 auto;
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 1px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+span.lineBottom {
+  top: 38px;
+  width: 45px;
+}
+
+.hamBox:hover .lineBottom {
+  top: 32px;
+  height: 2;
+  transition: all 0.3s ease-in-out;
+}
+.hamBox:hover .lineTop {
+  width: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.lineBottom.spin {
+  top: 32px;
+  height: 2;
+  transition: all 0.3s ease-in-out;
+}
+.lineTop.spin {
+  width: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.nav-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.nav-link li {
+  list-style: none;
+  position: relative;
+}
+
+ul.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Melted Monster', sans-serif;
+  font-size: 6em;
+  position: relative;
+  top: 0;
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+ul.nav-links li:hover a {
+  color: #780606;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-item-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 120px;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: #18181c;
+  margin: 0 auto;
+}
+
+.nav-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-social-media ul {
+  display: flex;
+}
+
+.nav-social-media ul li a {
+  position: relative;
+  bottom: -20px;
+  text-decoration: none;
+  font-family: 'Sofadi One', system-ui;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 2em;
+  opacity: 0;
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.location {
+  position: relative;
+  bottom: -20px;
+  opacity: 0;
+  transition: a11 2s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+/*light-mode*/
+.light-mode .logo a {
+  color: #0d0d11;
+}
+.light-mode .lineTop,
+.light-mode .lineBottom {
+  background: #0d0d11;
+}
+
+.light-mode button.mode-btn {
+  color: #0d0d11;
+}
+.light-mode button.mode-btn:hover {
+  background: transparent;
+}
+.light-mode .nav-overlay {
+  background: rgba(255, 255, 255, 0.8);
+}
+.light-mode ul.nav-links li a {
+  color: #18181c;
+}
+.light-mode ul.nav-links li:hover a {
+  color: #fdda0d;
+}
+.light-mode .hamBoxOpen {
+  background: #f2f2f8;
+}
+.light-mode .nav-social-media ul li a {
+  color: #18181c;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-social {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 997px) and (orientation: landscape) {
+  ul.nav-links li a {
+    font-size: 2.2em; /* Increased font size for landscape */
+  }
+}
+
+@media (max-width: 900px) {
+  ul.nav-link li a {
+    font-size: 5em;
+  }
+  .location {
+    display: none;
+  }
+  .nav-footer {
+    justify-content: space-around;
+  }
+
+  .nav-social-media ul li a {
+    padding: 0 1em;
+  }
+}
+@media (max-width: 580px) {
+  ul.nav-links li a {
+    font-size: 4.5em;
+  }
+}

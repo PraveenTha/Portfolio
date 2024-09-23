@@ -1,0 +1,178 @@
+.portfolio-section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.work h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  width: 100%;
+  position: relative;
+  color: white;
+  height: 100vh;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.tags {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #4a4a4a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.project-title {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.project-description {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.visit-button {
+  background-color: #6200ee;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 20px 0;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+}
+button.close-button {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.visit-button:hover {
+  background-color: #7c4dff;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #7c4dff;
+}
+
+.nav-button.prev {
+  left: 62%;
+  top: 5%;
+}
+
+.nav-button.next {
+  right: 12%;
+  top: 5%;
+}
+
+.image-box {
+  height: 100%;
+  overflow-y: auto;
+  width: 60%;
+}
+
+.flex-box {
+  display: flex;
+  height: 100%;
+}
+
+.lit-contant {
+  width: 40%;
+  padding: 50px 30px;
+  background: #0e0c16;
+}
+
+/* width */
+.image-box::-webkit-scrollbar {
+  width: 2px;
+}
+
+.visit-button.disabled {
+  cursor: not-allowed;
+  opacity: 0.6; /* Or any other style to indicate it's inactive */
+  pointer-events: none; /* Prevent clicking */
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sofadi One', system-ui;
+}
+
+html,
+body {
+  background: #0d0d11;
+  color: #fff;
+  font-family: 'Sofadi One', system-ui;
+}
+
+.blood-red {
+  color: #780606;
+}
+
+img {
+  max-width: 100%;
+}
+
+html.light-mode,
+body.light-mode {
+  background: #fff;
+  color: #0d0d11;
+}
