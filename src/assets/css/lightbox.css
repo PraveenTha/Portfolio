@@ -176,3 +176,40 @@ button.close-button {
   opacity: 0.6; /* Or any other style to indicate it's inactive */
   pointer-events: none; /* Prevent clicking */
 }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .nav-button.next {
+    right: 0%;
+    top: 90%;
+  }
+  .nav-button.prev {
+    left: 0;
+    top: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-box {
+    display: block;
+    overflow: auto;
+  }
+  .image-box {
+    height: 350px;
+    overflow-y: auto;
+    width: 100%;
+  }
+  .lit-contant {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .nav-button.prev {
+    left: 0;
+    top: 50%;
+  }
+  .nav-button.next {
+    right: 0%;
+    top: 50%;
+  }
+}
