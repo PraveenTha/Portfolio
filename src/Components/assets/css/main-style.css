@@ -1,0 +1,400 @@
+/*Dark Mode*/
+button.mode-btn {
+  color: #fff;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+/*Home Section*/
+.home-section {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/banner-dark-mod2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-contant {
+  position: absolute;
+  top: 45%;
+}
+.ban-containt {
+  padding-left: 40px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #780606;
+  border-radius: 50px;
+  position: absolute;
+  top: -50px;
+}
+
+.timeline {
+  background-color: #780606;
+  height: 98%;
+  left: 4px;
+  position: absolute;
+  top: -39px;
+  width: 2px;
+  z-index: 9;
+}
+.timeline a {
+  width: 40px;
+  position: absolute;
+  left: -19px;
+  top: 100%;
+}
+
+.timeline2 {
+  background-color: #780606;
+  height: 50%;
+  left: 4px;
+  position: absolute;
+  top: 135px;
+  width: 2px;
+  z-index: 9;
+}
+
+/*About-section*/
+
+.about-me:before {
+  color: #221d35;
+  content: 'ABOUT ME';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 7em;
+  font-weight: 700;
+  left: 5%;
+}
+section.about-section {
+  padding-bottom: 40px;
+}
+.info-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buttons a {
+  color: #780606;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.info-item a:hover,
+.buttons a:hover {
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+.skill {
+  text-align: center;
+}
+.skill:before {
+  color: #fff;
+  content: 'Skills';
+  font-family: 'Sofadi One', system-ui;
+  font-size: 2em;
+  font-weight: 700;
+  left: 5%;
+}
+
+span.logo {
+  display: inline-block;
+  padding: 20px;
+  background: radial-gradient(black, transparent);
+  margin: 15px;
+}
+span.logo img {
+  width: 125px;
+  height: 125px;
+  animation: leaves 5s ease-in-out infinite alternate;
+  -webkit-animation: leaves 5s ease-in-out infinite alternate;
+}
+
+@keyframes leaves {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes leaves {
+  0% {
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+.skill {
+  background: #221d35;
+  border-radius: 10px;
+  padding: 40px 0;
+}
+.epx {
+  position: relative;
+}
+.epx .dot {
+  top: 0;
+}
+
+.line {
+  width: 2px;
+  background: #780606;
+  height: 65px;
+  position: absolute;
+  top: 10.5px;
+  left: 4.5px;
+}
+
+/*Poerfolio*/
+
+.work:before {
+  color: #221d35;
+  content: 'PORTFOLIO';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 7em;
+  font-weight: 700;
+  left: 5%;
+}
+
+.gallary {
+  margin-top: 40px;
+  position: relative;
+}
+
+.gallery-item {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 0.5s ease;
+}
+
+.gallery-item:hover .card-body {
+  top: 50%;
+  transition: all 0.5s ease;
+}
+
+/*Contact Section*/
+
+.contact:before {
+  color: #221d35;
+  content: 'Contact Me';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 7em;
+  font-weight: 700;
+  left: 5%;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form,
+.contact-detail.form {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 25px 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  color: 333;
+  margin: 25px;
+}
+
+form h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+form .input-box {
+  margin-top: 20px;
+}
+
+.input-box .field {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #221d35;
+  outline: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 16px;
+  color: #780606;
+  margin-top: 8px;
+}
+
+.input-box .field.mess {
+  height: 200px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  height: 55px;
+  background: #221d35;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 25px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+form button:hover {
+  color: #780606;
+}
+
+/*footer*/
+div#footer {
+  background: #0d0d11;
+  padding: 20px 0;
+  border-top: 2px solid #221d35;
+}
+.footer-social {
+  text-align: center;
+}
+.footer-social a {
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-logo h1 {
+  color: #fff;
+  text-align: center;
+}
+.footer-copyright {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+/*light mode*/
+
+.light-mode .home-section {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/light-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.light-mode .timeline,
+.light-mode .timeline2,
+.light-mode .line {
+  background-color: #fdda0d;
+}
+.light-mode .dot {
+  border: 2px solid #fdda0d;
+}
+
+.light-mode .buttons a,
+.light-mode .input-box .field {
+  color: #221d35;
+}
+
+.light-mode .skill {
+  background: #f2f2f2;
+}
+
+.light-mode .skill:before {
+  color: #221d35;
+}
+
+.light-mode span.logo {
+  background: transparent;
+}
+
+.light-mode .hamBox:hover {
+  background: rgba(104, 174, 223, 1);
+}
+.light-mode .lit-contant {
+  background: rgba(104, 174, 223, 1);
+}
+
+.light-mode button:hover {
+  color: #221d35;
+  background: #cfe6ef;
+}
+.light-mode form,
+.light-mode .contact-detail.form {
+  background: #f2f2f2;
+}
+
+.light-mode div#footer {
+  background: #f4f4f4;
+  padding: 20px 0;
+}
+.light-mode .footer-social {
+  text-align: center;
+}
+.light-mode .footer-social a {
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #221d35;
+}
+.light-mode .footer-logo h1 {
+  color: #221d35;
+  text-align: center;
+}
+.light-mode .footer-copyright {
+  color: #221d35;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.light-mode .card-body {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .about-me:before,
+  .work:before,
+  .contact:before {
+    font-size: 4em;
+  }
+
+  .contact-form {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 580px) {
+  .about-me:before,
+  .work:before {
+    font-size: 3em;
+  }
+  .about-me {
+    margin-top: 80px;
+  }
+  .work {
+    margin-top: 40px;
+  }
+  .contact:before {
+    font-size: 3em;
+  }
+}
